@@ -11,7 +11,6 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
-    "plugin:prettier/recommended"
   ],
   "globals": {
     "React": "readonly"
@@ -28,13 +27,11 @@
     "react",
     "react-hooks",
     "@typescript-eslint",
-    "prettier"
   ],
   "rules": {
     "camelcase": "off",
     "import/no-duplicates": "off",
     "react/jsx-props-no-spreading": "off",
-    "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "jsx-a11y/anchor-is-valid": [

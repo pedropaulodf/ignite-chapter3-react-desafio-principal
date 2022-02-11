@@ -1,1 +1,74 @@
-// TODO
+.content{
+  
+  a {
+    transition: all 0.3s;
+    &:hover{
+      display: block;
+      opacity: .8;
+    }
+  }
+  
+  h1 {
+    color: var(--text-title-color);
+    font-size: 1.7rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+  
+  .postSubtitle {
+    color: var(--text-subtitle-color);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .postInfos {
+    color: var(--text-info-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .postDate {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-right: 1rem;
+
+    svg {
+      margin-right: 0.4rem;
+    }
+
+    p{
+      font-size: 0.9rem;
+    }
+  }
+
+  .postAuthor {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    svg {
+      margin-right: 0.4rem;
+    }
+
+    p{
+      font-size: 0.9rem;
+    }
+  }
+
+  button {
+    color: var(--text-highlight-color);
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,24 +1,31 @@
 .content{
   
   a {
+    display: block;
     transition: all 0.3s;
+
+    & + a {
+      margin-top: 48px;
+    }
+
     &:hover{
-      display: block;
       opacity: .8;
+      border-left:5px solid var(--text-highlight-color);
+      padding-left: 10px;
     }
   }
   
   h1 {
     color: var(--text-title-color);
-    font-size: 1.7rem;
+    font-size: 28px;
     margin-bottom: 0.4rem;
     font-weight: 700;
   }
   
   .postSubtitle {
     color: var(--text-subtitle-color);
-    font-size: 1.1rem;
-    margin-bottom: 1.2rem;
+    font-size: 18px;
+    margin-bottom: 24px;
   }
 
   .postInfos {
@@ -26,15 +33,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.1rem;
-    margin-bottom: 2.6rem;
+    font-size: 18px;
   }
 
   .postDate {
     display: flex;
     justify-content: center;
     align-items: end;
-    margin-right: 1rem;
+    margin-right: 24px;
 
     svg {
       margin-right: 0.4rem;
@@ -63,9 +69,9 @@
     color: var(--text-highlight-color);
     border: none;
     background: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 64px;
 
     &:hover{
       opacity: 0.8;

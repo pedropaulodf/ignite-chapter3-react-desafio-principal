@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
 
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           
-          <title>Home | SpaceTraveling</title>
+          {/* <title>Home | SpaceTraveling</title> */}
         </Head>
         <body>
           <Main/>

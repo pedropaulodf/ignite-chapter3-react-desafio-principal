@@ -67,7 +67,7 @@ export default function Home({ postsPagination }: HomeProps) {
                 <div className={styles.postInfos}>
                   <div className={styles.postDate}>
                     <FiCalendar size={18}/>
-                    <p>{post.first_publication_date}</p>
+                    <p>{formatDateTo_dd_MMM_Y(post.first_publication_date)}</p>
                   </div>
                   <div className={styles.postAuthor}>
                     <FiUser size={18}/>
@@ -96,13 +96,13 @@ export const getStaticProps: GetStaticProps = async () => {
     Prismic.predicates.at('document.type', 'posts')
   ], {
     fetch: [ 'post.title', 'post.subtitle', 'post.author', 'post.banner', 'post.content'],
-    pageSize: 2,
+    pageSize: 3,
   });
   
   const results = postsResponse.results.map(post => {
     return {
       uid: post.uid,
-      first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date),
+      first_publication_date: post.first_publication_date,
       data: {
         title: post.data.title,
         subtitle: post.data.subtitle,

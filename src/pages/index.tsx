@@ -102,7 +102,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const results = postsResponse.results.map(post => {
     return {
       uid: post.uid,
-      first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date),
+      first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date || 'Não informado'),
       data: {
         title: post.data.title,
         subtitle: post.data.subtitle,

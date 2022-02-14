@@ -134,7 +134,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       post: {
-        first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date),
+        first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date || 'Não informado'),
         uid: post.uid,
         data: {
           title: post.data.title,

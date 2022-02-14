@@ -69,7 +69,7 @@ export default function Post({ post }: PostProps) {
             <div className={styles.postInfos}>
               <div className={styles.postDate}>
                 <FiCalendar size={20}/>
-                <p>{formatDateTo_dd_MMM_Y(post.first_publication_date)}</p>
+                <p>{post.first_publication_date}</p>
               </div>
               <div className={styles.postAuthor}>
                 <FiUser size={20}/>
@@ -134,7 +134,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       post: {
-        first_publication_date: post.first_publication_date,
+        first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date),
         uid: post.uid,
         data: {
           title: post.data.title,

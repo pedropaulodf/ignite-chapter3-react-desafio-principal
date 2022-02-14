@@ -2,7 +2,7 @@
 import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 
-export default function formatDateTo_dd_MMM_Y(dateToFormat: string) {
+export function formatDateTo_dd_MMM_Y(dateToFormat: string) {
   return format(new Date(dateToFormat), "dd MMM Y",{ locale: ptBR })
 }
 

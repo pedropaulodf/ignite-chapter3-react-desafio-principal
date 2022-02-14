@@ -6,12 +6,12 @@ import Link from 'next/link'
 import Prismic from '@prismicio/client'
 
 import { getPrismicClient } from '../services/prismic';
-import formatDateTo_dd_MMM_Y from './utils/utils';
 
 import Header from '../components/Header';
 
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
+import { formatDateTo_dd_MMM_Y } from '../utils/utils';
 
 interface Post {
   uid?: string;
@@ -102,7 +102,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const results = postsResponse.results.map(post => {
     return {
       uid: post.uid,
-      first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date || 'Não informado'),
+      first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date),
       data: {
         title: post.data.title,
         subtitle: post.data.subtitle,

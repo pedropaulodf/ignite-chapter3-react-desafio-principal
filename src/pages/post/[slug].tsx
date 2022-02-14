@@ -6,12 +6,12 @@ import Prismic from '@prismicio/client'
 import { RichText } from 'prismic-dom';
 
 import { getPrismicClient } from '../../services/prismic';
-import formatDateTo_dd_MMM_Y, { calcTimeToRead } from '../utils/utils';
 
 import Header from '../../components/Header';
 import Loading from '../../components/Loading';
 
 import styles from './post.module.scss';
+import { calcTimeToRead, formatDateTo_dd_MMM_Y } from '../../utils/utils';
 interface Post {
   first_publication_date: string | null;
   data: {
@@ -134,7 +134,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       post: {
-        first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date || 'Não informado'),
+        first_publication_date: formatDateTo_dd_MMM_Y(post.first_publication_date),
         uid: post.uid,
         data: {
           title: post.data.title,

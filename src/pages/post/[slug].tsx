@@ -6,7 +6,7 @@ import Prismic from '@prismicio/client'
 import { RichText } from 'prismic-dom';
 
 import { getPrismicClient } from '../../services/prismic';
-import { calcTimeToRead, formatDateTo_dd_MMM_Y } from '../utils/utils';
+import formatDateTo_dd_MMM_Y, { calcTimeToRead } from '../utils/utils';
 
 import Header from '../../components/Header';
 import Loading from '../../components/Loading';

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Prismic from '@prismicio/client'
 
 import { getPrismicClient } from '../services/prismic';
-import { formatDateTo_dd_MMM_Y } from './utils/utils';
+import formatDateTo_dd_MMM_Y from './utils/utils';
 
 import Header from '../components/Header';
 

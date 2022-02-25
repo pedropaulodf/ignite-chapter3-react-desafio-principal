@@ -1,7 +1,7 @@
 export const CommentsSection: React.FC = () => (
   <section
     ref={elem => {
-      if (!elem) {
+      if (!elem || elem.childNodes.length) {
         return;
       }
       const scriptElem = document.createElement("script");

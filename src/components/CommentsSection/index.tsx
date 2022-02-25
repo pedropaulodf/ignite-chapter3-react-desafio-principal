@@ -8,7 +8,7 @@ export const CommentsSection: React.FC = () => (
       scriptElem.src = "https://utteranc.es/client.js";
       scriptElem.async = true;
       scriptElem.crossOrigin = "anonymous";
-      scriptElem.setAttribute("repo", "osdiab/osdiab.github.io");
+      scriptElem.setAttribute("repo", "pedropaulodf/ignite-chapter3-react-desafio-principal");
       scriptElem.setAttribute("issue-term", "pathname");
       scriptElem.setAttribute("label", "blog-comment");
       scriptElem.setAttribute("theme", "github-light");

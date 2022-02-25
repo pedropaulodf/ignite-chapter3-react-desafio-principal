@@ -3,3 +3,34 @@
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.btnExitPreview {
+  width: 100%;
+  background-color: #F8F8F8;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 22px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+  transition: background-color 0.5s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: black;
+  }
+
+}
+
+.divider {
+  border: 1px solid #2D3035;
+}

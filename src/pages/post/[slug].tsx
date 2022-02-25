@@ -18,7 +18,7 @@ import Loading from '../../components/Loading';
 
 import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
-import { CommentsSection } from '../../components/ComentsSection';
+import { CommentsSection } from '../../components/CommentsSection';
 interface Post {
   last_publication_date: string | null;
   first_publication_date: string | null;
